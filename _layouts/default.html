@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+    <meta charset="UTF-8">
+    <title>{{ page.title | escape }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description | escape }}">
+    {% endif %}
+    <link rel="icon" href="/favicon.ico">
+    
+    <body>
+      <div class="page">
+        <div class="header">
+          <div class="picture">
+            <a href="/"><img src="/images/sergio.png" alt="Sergio Gil"/></a>
+          </div>
+          <h1><a href="/">Sergio Gil</a></h1>
+        </div>
+      
+        <div class="content">
+          <div class="side">
+            <ul>
+              <li><a href="http://example.com/">Github</a></li>
+              <li><a href="http://example.com/">Twitter</a></li>
+              <li><a href="http://example.com/">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="main">
+            {{ content }}
+          </div>
+        </div>
+      
+        <div class="footer">
+          © 2013
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
