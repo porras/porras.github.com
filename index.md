@@ -3,10 +3,21 @@ layout: fancy
 title: Sergio Gil
 ---
 
-Hello! / ¡Hola! / Hallo!
+I am also known over the web as *porras*.
 
-My name is Sergio Gil. I am a Spanish web developer currently based in Berlin, Germany.
+I do web development for a life. I mainly use [Ruby](http://www.ruby-lang.org/) and [Ruby on Rails](http://rubyonrails.org/) for that, and I have around six years of experience with them.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I like to [contribute](http://ghcontributors.herokuapp.com/porras) to Open Source software. Among those contributions, the ones I'm most proud of are the ones on [Rails](http://contributors.rubyonrails.org/contributors/sergio-gil/commits).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I like to participate in the community. While I was living in Madrid, I helped create the [local user group](http://madridrb.jottit.com/) and organize a couple of editions of [Conferencia Rails](http://conferenciarails.org/). I have also [spoken](/talks) a few times at those and other events.
+
+<!-- ### Writings
+
+* [Wadus]()
+* [Wadus]()
+* [Wadus]()
+* [All writings]() -->
+
+### Also here
+
+* [GitHub Contributors](http://ghcontributors.herokuapp.com/)
