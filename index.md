@@ -1,7 +1,12 @@
 ---
-layout: fancy
+layout: default
 title: Sergio Gil
 ---
+
+{% include side.html %}
+
+# [Sergio Gil](/)
+## I am a web developer. I live in Berlin.
 
 I am also known over the web as *porras*.
 
