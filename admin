@@ -1,0 +1,22 @@
+require 'thor'
+require 'yaml'
+
+class Admin < Thor
+  include Thor::Actions
+  
+  desc "new TYPE FILENAME", "creates a new item of type TYPE"
+  def new(type, filename)
+    directory = "#{type}s"
+    date = Time.now.strftime('%Y-%m-%d')
+    
+    create_file File.join(directory, '_posts', "#{date}-#{filename}.md"), template('layout' => 'default', 'category' => type, 'title' => filename)
+  end
+  
+  private
+  
+  def template(data = {})
+    data.to_yaml + "---\n\n"
+  end
+end
+
+Admin.start(ARGV)

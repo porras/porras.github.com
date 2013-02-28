@@ -3,8 +3,6 @@ layout: default
 title: Sergio Gil
 ---
 
-{% include side.html %}
-
 # [Sergio Gil](/)
 ## I am a web developer. I live in Berlin.
 
@@ -16,12 +14,13 @@ I like to [contribute](http://ghcontributors.herokuapp.com/porras) to Open Sourc
 
 I like to participate in the community. While I was living in Madrid, I helped create the [local user group](http://madridrb.jottit.com/) and organize a couple of editions of [Conferencia Rails](http://conferenciarails.org/). I have also [spoken](/talks) a few times at those and other events.
 
-<!-- ### Writings
+{% comment %}
+### Writings
 
-* [Wadus]()
-* [Wadus]()
-* [Wadus]()
-* [All writings]() -->
+{% for writing in site.categories.writings limit:3 %}
+* [{{ writing.title }}]({{ writing.url }}){% endfor %}
+* [More writings](/writings)
+{% endcomment %}
 
 ### Also here
 
