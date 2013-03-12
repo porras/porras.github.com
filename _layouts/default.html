@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/code.css">
     <meta charset="UTF-8">
-    <title>{{ page.title | escape }}</title>
+    <title>Sergio Gil · {{ page.title | escape }}</title>
     {% if page.description %}
     <meta name="description" content="{{ page.description | escape }}">
     {% endif %}
@@ -16,6 +16,19 @@
     
     {{ content }}
     
-    <div class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> · © 2013</div>
+    <div class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> · © 2006 - 2013</div>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39240138-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>

@@ -16,6 +16,10 @@ a:hover {
   color: #e00;
 }
 
+h1 {
+  line-height: 1em;
+}
+
 h2 {
   font-weight: normal;
 }
@@ -53,4 +57,15 @@ img.picture {
   margin: 10px;
   background-color: white;
   border: 1px solid #000;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+hr {
+    border: none;
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
 }
