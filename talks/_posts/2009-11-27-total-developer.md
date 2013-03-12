@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: Total Developer
+event: Conferencia Rails 2010
+event_url: http://conferenciarails.org/
 ---
-
-# Total Developer
-## [Conferencia Rails 2010](http://conferenciarails.org/)
 
 This talk was a reflective one about what I think makes a good developer. It's mostly about responsibility.
 

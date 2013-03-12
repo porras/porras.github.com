@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: Acceptance Testing with RSpec, Capybara & friends
+event: madrid-rb February 2010
+event_url: https://madridrb.jottit.com/
 ---
-
-# Acceptance Testing with RSpec, Capybara & friends
-## [madrid-rb](https://madridrb.jottit.com/) February 2010
 
 I gave this talk (in Spanish) in the [Madrid Ruby User Group](https://madridrb.jottit.com/) monthly meeting. It was a comprehensive description of my favorite Ruby testing stack at the time (it remains my favorite with very little change). Specifically, it contained a discussion about Cucumber and why I didn't like it for most projects.
 

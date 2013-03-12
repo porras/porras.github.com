@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: I used to be a writer
+event: lightning.io
+event_url: http://lightning.io/
 ---
-
-# I used to be a writer
-## [lightning.io](http://lightning.io/)
 
 I gave this short talk in a very nice conference in Poznan, Poland, which was composed only of short talks.
 

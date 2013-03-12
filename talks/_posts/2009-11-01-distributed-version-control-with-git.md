@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: Distributed Version Control with GIT
+event: GUL-UC3M
+event_url: http://gul.es/
 ---
-
-# Distributed Version Control with GIT
-## [GUL-UC3M](http://gul.es/)
 
 I gave this talk (in Spanish) in the [Linux User Group](http://gul.es/) yearly conferences days. It was an introduction (although it covers fairly advanced uses, it was a long talk, almost a course) to version control with Git.
 

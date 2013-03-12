@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: The Total IDE
+event: RejectConf Conferencia Rails 2010
+event_url: https://rejectconf.jottit.com/
 ---
-
-# The Total IDE
-## [RejectConf](https://rejectconf.jottit.com/) Conferencia Rails 2010
 
 This was a short talk about UNIX being the ultimate IDE.
 

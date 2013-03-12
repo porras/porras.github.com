@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: Five Languages in a Moment
+event: Conferencia Rails 2011
+event_url: http://conferenciarails.org/
 ---
-
-# Five Languages in a Moment
-## [Conferencia Rails 2011](http://conferenciarails.org/)
 
 I had a lot of fun preparing this talk. It was a *whole* lot of work but it was worth it. Lately I had been interested in non-mainstream (which, in my not very academical world means anything that's not like Ruby, Perl, Python, PHP, Javascript, C or Java) languages, and I wanted to share my findings and conclusions with my fellow rubyists.
 

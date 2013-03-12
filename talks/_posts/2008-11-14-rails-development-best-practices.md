@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: Rails Development Best Practices
+event: Conferencia Rails 2008
+event_url: http://conferenciarails.org
 ---
-
-# Rails Development Best Practices
-## [Conferencia Rails](http://conferenciarails.org) 2008
 
 This talk (in Spanish) was a recollection of what I considered at the time the *best practices* when developing Rails applications. Obviously I've changed some opinions since then, but I think the talk passes the test of time more or less well.
 

@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: ✓
+event: Baruco 2012 Lightning Talks
+event_url: http://www.baruco.org/
 ---
-
-# ✓
-## [Baruco](http://www.baruco.org/) 2012 Lightning Talks
 
 This is a short joking talk with an strange title about an irrelevant topic. But it was a lot of fun to give it, and I think the audience enjoyed too!
 

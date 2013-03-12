@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: talk
 category: talk
 title: Ruby Metaprogramming
+event: Conferencia Rails 2007
+event_url: http://conferenciarails.org/
 ---
-
-# Ruby Metaprogramming
-## [Conferencia Rails](http://conferenciarails.org/) 2007
 
 This talk in Spanish was an overview of the metaprogramming techniques available in Ruby.
 
