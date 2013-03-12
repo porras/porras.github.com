@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sergio Gil · Talks
+title: Talks
 ---
 
 # Talks

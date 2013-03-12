@@ -6,7 +6,7 @@ event: lightning.io
 event_url: http://lightning.io/
 ---
 
-I gave this short talk in a very nice conference in Poznan, Poland, which was composed only of short talks.
+I gave this short talk in a very nice conference in Poznan, Poland, which consisted on a whole day of short talks.
 
 It was a kind of inspirational talk exploring the similarity between human languages and programming languages, how I think that what makes a good programmer is the same kind of thing that makes a good writer, and the importance of the tone of a language, human or not.
 
