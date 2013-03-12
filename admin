@@ -9,7 +9,7 @@ class Admin < Thor
     directory = "#{type}s"
     date = Time.now.strftime('%Y-%m-%d')
     
-    create_file File.join(directory, '_posts', "#{date}-#{filename}.md"), template('layout' => 'default', 'category' => type, 'title' => filename)
+    create_file File.join(directory, '_posts', "#{date}-#{filename}.md"), template('layout' => type, 'category' => type, 'title' => filename)
   end
   
   private

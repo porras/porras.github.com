@@ -16,6 +16,10 @@ a:hover {
   color: #e00;
 }
 
+h1 {
+  line-height: 1em;
+}
+
 h2 {
   font-weight: normal;
 }
@@ -45,4 +49,15 @@ img.picture {
   text-align: center;
   color: #aaa;
   clear: both;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+hr {
+    border: none;
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
 }
