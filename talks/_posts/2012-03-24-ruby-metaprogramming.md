@@ -1,10 +1,10 @@
 ---
 layout: default
 category: talk
-title: Ruby Metaprogramming
+title: Introduction to Ruby Metaprogramming
 ---
 
-# Ruby Metaprogramming
+# Introduction to Ruby Metaprogramming
 ## [Codemotion Spain](http://codemotion.es/)
 
 [Codemotion Spain](http://codemotion.es/) was an annual conference held from some years ago in Italy that expanded to Spain in 2012 (and also Germany in 2013). The talk was in Spanish (although the slides are in English). It was a technology agnostic event (there were talks about Ruby, PHP, Javascript, Python, Java, .NET, HTML5, CSS, Mobile, Android, iOS...) so the tone is very introductory, addressed to people with programming experience but little or no Ruby knowledge.
