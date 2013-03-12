@@ -1,3 +1,5 @@
 safe: true
 exclude: [Gemfile, Gemfile.lock, admin]
-permalink: /:year/:title/
+permalink: /:categories/:year/:title/
+pygments: true
+markdown: redcarpet

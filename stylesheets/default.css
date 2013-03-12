@@ -46,3 +46,11 @@ img.picture {
   color: #aaa;
   clear: both;
 }
+
+.logo {
+  float: right;
+  padding: 30px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #000;
+}
