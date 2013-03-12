@@ -46,3 +46,7 @@ img.picture {
   color: #aaa;
   clear: both;
 }
+
+blockquote {
+  font-style: italic;
+}
