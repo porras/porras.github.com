@@ -18,7 +18,9 @@ I like to participate in the community. While I was living in Madrid, I helped c
 
 {% for writing in site.categories.writings limit:3 %}
 * [{{ writing.title }}]({{ writing.url }}){% endfor %}
-* [More writings](/writings)
+
+
+<!-- * [More writings](/writings) -->
 
 ### Also here
 

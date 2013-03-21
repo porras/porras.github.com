@@ -6,6 +6,8 @@ event: Conferencia Rails 2011
 event_url: http://conferenciarails.org/
 ---
 
+*I also wrote a long article based on this talk, find it [here](/writings/2013/five-languages-in-a-moment/)*.
+
 I had a lot of fun preparing this talk. It was a *whole* lot of work but it was worth it. Lately I had been interested in *non-mainstream* (which, in my not very academical world means anything that's not like Ruby, Perl, Python, PHP, Javascript, C or Java) languages, and I wanted to share my findings and conclusions with my fellow rubyists.
 
 This was the description in the conference webpage:
