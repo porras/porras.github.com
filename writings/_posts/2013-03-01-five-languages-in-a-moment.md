@@ -65,7 +65,7 @@ Obviously I'm not going to teach you to program in Erlang, but I'd like to explo
 
 ### A functional language
 
-So what is functional programming? If you don't know functional programming, I recommend you to read [this delicious article](http://www.defmacro.org/ramblings/fp.html). But if I had to summarize it, I'd tell it's **side effects free programming**. In FP, not very surprinsingly, the function is the main building block. Your program is composed of functions that, as mathematical functions, take inputs and give outputs. And that's pretty much everything. There is no global state that can be modified, just functions returning values.
+So what is functional programming? If you don't know functional programming, I recommend you to read [this delicious article](http://web.archive.org/web/20100130205317/http://www.defmacro.org/ramblings/fp.html). But if I had to summarize it, I'd tell it's **side effects free programming**. In FP, not very surprinsingly, the function is the main building block. Your program is composed of functions that, as mathematical functions, take inputs and give outputs. And that's pretty much everything. There is no global state that can be modified, just functions returning values.
 
 This fact yields obvious limitations, and for sure requires a change in your programming mindset and techniques. Because, *how can you get anything done without changing state?*. But it also has advantages. No side effects means less bugs. And less coupling between different parts of your program. And very easy testing. And much easier parallelization.
 
