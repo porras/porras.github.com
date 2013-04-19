@@ -31,13 +31,13 @@ In 2010, I remembered it and I thought I needed to catch up. What made me think 
 
 That's one of the most inspiring books I've ever read. Seriously, read it if you haven't. There's a concept on that book that had me thinking for days, and working on this idea for months: **The Power Continuum**.
 
-The idea is simple: there's a power continuum between the lowest level, least powerful in abstractions language and the highest level, most powerful in abstractions one. So, why don't all programmers choose the same language, the most powerful one?. It's not so simple: as programmers, we are not able to fully know that power continuum, which remains kind of *‘platonic’* for a simple reason: we're in it. So, when we look down the stairs, all is clear for us. We see a lot of languages which are clearly less powerful than ours. We can even wonder how can that poor people get anything done in a language without, for example, blocks. Or classes.
+The idea is simple: there's a power continuum between the lowest level, least powerful in abstractions language and the highest level, most powerful in abstractions one. So, why don't all programmers choose the same language, the most powerful one? It's not so simple: as programmers, we are not able to fully know that power continuum, which remains kind of *‘platonic’* for a simple reason: we're in it. So, when we look down the stairs, all is clear for us. We see a lot of languages which are clearly less powerful than ours. We can even wonder how can that poor people get anything done in a language without, for example, blocks. Or classes.
 
 But when we look up the stairs, things are not so easy because we may even not realize we're looking up. When we look at a language more powerful than ours, we don't see that. We just see a strange language with strange features. A language just as powerful as ours, but with some weird stuff mixed in. We simply lack the mental abstractions to understand those features. If as programmers we ‘think in Ruby’, we'll never be able to understand some powerful features present in other languages, just like a Java programmer doesn't at first understand the power of Ruby blocks. That's why having a look at those languages that seem strange to us at first is interesting: because we might find that that languages are not strange, but more powerful.
 
 Anyway, for me, feeding new abstractions for my mind to think in sounds like a very legitimate reason to learn new languages. Even if I plan to stick with Ruby (which I do). So, as I told before, I decided to catch up with my promise.
 
-By the time, I had just moved to live with my girlfriend. And with her, also came her huge comics collection, almost as cool as her. Next stop was a well known swedish furniture shop, to get the biggest shelve we could find, which is taller than me, and far wider. After mounting it, the miracle: an empty slot. I had to fix that! Next stop, a well known online book store. There, I found this book:
+By the time, I had just moved to live with my girlfriend. And with her, also came her huge comics collection, almost as cool as her. Next stop was a well known Swedish furniture shop, to get the biggest shelve we could find, which is taller than me, and far wider. After mounting it, the miracle: an empty slot. I had to fix that! Next stop, a well known online book store. There, I found this book:
 
 [![7 Languages in 7 Weeks](/images/five/seven-languages.jpg)](http://pragprog.com/book/btlang/seven-languages-in-seven-weeks)
 
@@ -67,7 +67,7 @@ Obviously I'm not going to teach you to program in Erlang, but I'd like to explo
 
 So what is functional programming? If you don't know functional programming, I recommend you to read [this delicious article](http://web.archive.org/web/20100130205317/http://www.defmacro.org/ramblings/fp.html). But if I had to summarize it, I'd tell it's **side effects free programming**. In FP, not very surprinsingly, the function is the main building block. Your program is composed of functions that, as mathematical functions, take inputs and give outputs. And that's pretty much everything. There is no global state that can be modified, just functions returning values.
 
-This fact yields obvious limitations, and for sure requires a change in your programming mindset and techniques. Because, *how can you get anything done without changing state?*. But it also has advantages. No side effects means less bugs. And less coupling between different parts of your program. And very easy testing. And much easier parallelization.
+This fact yields obvious limitations, and for sure requires a change in your programming mindset and techniques. Because, *how can you get anything done without changing state?* But it also has advantages. No side effects means less bugs. And less coupling between different parts of your program. And very easy testing. And much easier parallelization.
 
 So, variables don't vary. Doesn't seem it nonsense? I'll tell you what is nonsense:
 
@@ -94,7 +94,7 @@ But soon we will find a difference:
 
 For sure. X can't be both 1 and 2!
 
-What pattern matching means is that we are asserting that both parts of the equals are actually equal, and the compiler will do whatever is possible to make my assertion true.
+What pattern matching means is that we are asserting that both sides of the equals are actually equal, and the compiler will do whatever is possible to make my assertion true.
 
 In this other case I'm going to assert that the variable `Point` equals a data structure composed of the symbol `point` and the integers `15` and `20`. Then I assert that the structure `{point, X, Y} = Point`. `point` equals `point`? Yes! `X` is `15`? If sou say so... `Y` is `20`? Ok!
 
@@ -136,7 +136,7 @@ And if you're really afraid anything can get done without variables or object or
 ```erlang
 area({rectangle, Width, Height}) -> Width * Height;
 area({square, X})                -> X * X;
-area({circle, R})                -> 3.14159 * R.
+area({circle, R})                -> 3.14159 * R * R.
 ```
 
 It's much shorter and clearer than its Ruby equivalent!
@@ -169,7 +169,7 @@ class Circle
   end
 
   def area
-    3.14159 * @r
+    3.14159 * @r * @r
   end
 end
 ```
@@ -184,7 +184,7 @@ def area(*args)
   when :square
     args[1] * args[1]
   when :circle
-    3.141519 * args[1]
+    3.141519 * args[1] * args[1]
   end
 end
 ```
@@ -193,11 +193,11 @@ There's much to functional programming, and I encourage you not to dismiss it ju
 
 ### Concurrency oriented
 
-So, concurrency is a very interesting topic, now that Moore's law seems to have stopped and that what we're getting instead is more cores. Erlang approach is unique, and largely based on what I just told: no global state. Almost all bugs in concurrent programs are related to the sharing of some global state, a whole family of bugs which are simply not possible in Erlang.
+So, concurrency is a very interesting topic, now that Moore's law seems to have stopped and that what we're getting instead is more cores. Erlang approach is unique, and largely based on what I just said: no global state. Almost all bugs in concurrent programs are related to the sharing of some global state, a whole family of bugs which are simply not possible in Erlang.
 
 The concurrency unit is the **process** (not in the operating system meaning of the term). Since processes share no memory or state, are easy to synchronize without using locks, and without incurring in race conditions or other subtle bugs related to thread based programming. But, if processes don't share any memory or state, how do they interact? Through message passing.
 
-To create a new process, we use the function `spawn`, which takes a function as parameter (which can be anonymous or named) that is simply the operation to perform by that process, and which returns a process identificator that we'll need to pass messages:
+To create a new process, we use the function `spawn`, which takes a function as parameter (which can be anonymous or named) that is simply the operation to perform by that process, and which returns a process identifier that we'll need to pass messages:
 
 ```erlang
 Pid = spawn(Fun).
@@ -205,7 +205,7 @@ Pid = spawn(Fun).
 
 Now we have two concurrent processes running at the same time, and we can have as many as we want, since creating and destroying processes is very fast, much more than in the operating system.
 
-Which interesting things can we do with processes? Just one! Sending messages! We do it with the ! operator:
+Which interesting things can we do with processes? Just one! Sending messages! We do it with the `!` operator:
 
 ```erlang
 Pid ! Message.
@@ -222,7 +222,7 @@ end
 
 When we issue a `receive` statement, our process checks its *inbox* for any previously arrived message and process it, and if it's empty waits for one to arrive, and process it.
 
-One can write *adhoc* parallel programs, in which we parallelize certain calculations, but when things get really interesting is when we go generic. Let's see a example. This example may be a little complicated to explain in a minute, but I though I had to try because it's just beautiful. Don't worry if you don't get the details, try to get the *“essence”*.
+One can write *ad hoc* parallel programs, in which we parallelize certain calculations, but when things get really interesting is when we go generic. Let's see an example. This example may be a little complicated to explain in a minute, but I thought I had to try because it's just beautiful. Don't worry if you don't get the details, try to get the *“essence”*.
 
 We're going to implement a parallel map. It's a regular map, it takes a function and a list, and returns a new list with the results of applying that function to every element on the list. The only difference is that it applies that function in parallel.
 
@@ -245,7 +245,8 @@ gather([Pid|T]) ->
 
 We first store the main process PID, and then, using a regular map, we spawn a new process for each element in the list, that will apply the function and send the result to the main process. Just have a look at the message sent: we don't only send the result, but pack it with the PID of the child process, just like the sender name in the envelope of a letter: when we send a message, we say who's sending it, because it may be useful for the process receiving the message.
 
-Once we have spawned a process for each element, and stored all that PIDs in a list, we just have to wait for the results to arrive. How do we do it? Using receive and pattern matching, we check or wait for a message coming from the first process and then concatenate that result recursively.
+Once we have spawned a process for each element, and stored all those PIDs in a list, we just have to wait for the results to arrive. How do we do it? Using `receive` and pattern matching, we check or wait for a message coming from the first process, then from the second process, and so on. So we parallelize
+all computations, but are still able to collect them in order.
 
 I know this example is complicated, but I found it really interesting because using generic functions is the easiest way to write parallel programs: we separate the parallelization logic from the program logic and we can get performance boosts of even xN (being N the number of avaiable cores) writing our programs like we always did, without thinking about parallelization, as long as our functions are side effects free, which in Erlang is true by definition. In a time when 2 cores are everywhere, 4 and 8 cores are fairly common, and trends seem to suggest we'll get hundreds of cores anytime soon, that's almost a superpower.
 
@@ -281,13 +282,13 @@ Some facts about Haskell
 
 So, first of all is that Haskell is also a functional language so much of the things I just told about Erlang are true about Haskell too.
 
-But Haskell is a more *academically* functional language. Haskell lovers like to say Haskell is a niche language, and that its niche is solving hard problems. In order to that it adds a pair of things over what I just told you about functional programming in Erlang that I'd like to show you.
+But Haskell is a more *academically* functional language. Haskell lovers like to say Haskell is a niche language, and that its niche is solving hard problems. In order to do that it adds a pair of things over what I just told you about functional programming in Erlang that I'd like to show you.
 
 ### Type system
 
 * Strong: no casting or implicit conversion
 * Static: at compile time
-* Inferred: much of the time the compilar can infer the type of a expresion without us telling it
+* Inferred: much of the time the compiler can infer the type of a expression without us telling it
 
 So, Haskell values have types. A value can be a `Char`, an `Int`, a `Bool`, etc. But that's not all, of course. First, we have composite types, like lists of values, or tuples. So all these are valid types:
 
@@ -308,7 +309,7 @@ myBook = Book 9834756429 "Real World Haskell" ["Bryan O'Sullivan",
                                                "Don Stewart"]
 ```
 
-In this case we declare that BookInfo values are created using the Book constructor and some parameters.
+In this case we declare that `BookInfo` values are created using the `Book` constructor and some parameters.
 
 Or even:
 
@@ -327,17 +328,18 @@ In this case we create several different constructors, each one with different p
 Or, as another example, the areas one we did before:
 
 ```haskell
-data Shape = Circle Float
-           | Rectangle Float Float
+data Shape = Rectangle Float Float
            | Square Float
+           | Circle Float
 
-area (Circle r)      = r * 3.14
+
 area (Rectangle w h) = w * h
 area (Square x)      = x * x
+area (Circle r)      = 3.14159 * r * r
 
-circle = Circle 5
 rectangle = Rectangle 2 3
 square = Square 1.5
+circle = Circle 5
 ```
 
 And much more. In Haskell the idea is always being very precise about what kind of complex data is going on between functions, in order to model exactly the domain.
@@ -360,13 +362,13 @@ square_all = map (^2)
 
 ### Lazy evaluation
 
-We all have tried some laziness. For example, in recent versions of Rails' ActiveRecord, no database query is done until it's really needed. Just like when you told your mother you would clean up your room later. When you do:
+We all have tried some laziness. For example, in recent versions of Rails' Active Record, no database query is done until it's really needed. Just like when you told your mother you would clean up your room later. When you do:
 
 ```ruby
 @articles = Article.where(:status => 'published')
 ```
 
-No query is done, just the promise that it will be done later, when you access the `@article` variable in such a way that the query needs to be done:
+No query is done, just the promise that it will be done later, when you access the `@articles` variable in such a way that the query needs to be done:
 
 ```erb
 <% @articles.each do |article| %>
@@ -390,7 +392,7 @@ Haskell takes this idea really far. When you do:
 wadus 1 + 2
 ```
 
-You'd expect, just like happens in any language you know, that 1 + 2 would get evaluated, and its result (3), passed to wadus. Not in Haskell. In Haskell, it's the whole expression 1 + 2 what gets passed to wadus, and **only if it needs it**, gets that expression evaluated. This example may be silly, but this allows a completely new style of programming. For example:
+You'd expect, just like happens in any language you know, that 1 + 2 would get evaluated, and its result (3), passed to `wadus`. Not in Haskell. In Haskell, it's the whole expression 1 + 2 what gets passed to `wadus`, and **only if it needs it**, gets that expression evaluated. This example may be silly, but this allows a completely new style of programming. For example:
 
 ```haskell
 iforelse cond a b = if cond
@@ -453,9 +455,9 @@ So, Lisp rules are as simple as this:
 
 The coolest feature of Lisp, the one I want to show you the most, is macros.
 
-Macros generate at compile time the code than will actually get run. A.k.a. metaprogramming. Metaprogramming is a well known technique in many languages. We as rubyists like it, since it's the reason for example that Rails is so cool. But let me tell you something: no language allows you to go further in metaprogramming as Lisp. And I'll tell you why, because it's simple to understand, and, as you may have expected, it's fully related to the parentheses.
+Macros generate at compile time the code than will actually get run. A.k.a. metaprogramming. Metaprogramming is a well known technique in many languages. We as Rubyists like it, since it's the reason for example that Rails is so cool. But let me tell you something: no language allows you to go further in metaprogramming as Lisp. And I'll tell you why, because it's simple to understand, and, as you may have expected, it's fully related to the parentheses.
 
-Metaprogramming is generating and manipulating code. Code in almost all languages is just a stream of characters, so to manipulate it, we have the string manipulation tools, which may be useful but are obviously limited. If you read the Rails code, most of the examples use eval or class_eval with a string built using interpolations and maybe some iteration. And sometimes that feels nasty.
+Metaprogramming is generating and manipulating code. Code in almost all languages is just a stream of characters, so to manipulate it, we have the string manipulation tools, which may be useful but are obviously limited. If you read the Rails code, most of the examples use `eval` or `class_eval` with a string built using interpolations and maybe some iteration. And sometimes that feels nasty.
 
 In Lisp, source code is a normalized data structure: a list. All languages have powerful tools for manipulating lists, and Lisp is no exception. Actually, its name comes from LISt Processing.
 
@@ -493,14 +495,14 @@ Of course, there's much more you can get done with macros and, actually, it's sa
 Clojure is Lisp meets the XXI century, in several ways:
 
 * Lisp meets the JVM
-* Lisp meets purelly functional programming
+* Lisp meets purely functional programming
 * Lisp meets lazyness
 * Lisp meets concurrency
 * Lisp meets human inability to keep parenthesis balanced
 
 ### Clojure is a Lisp
 
-So, Clojure is a Lisp, so everything I just told about Common Lisp is true for Clojure too. Moreover, Clojure is a functional language, so everything I told about that is true for Clojure too.
+So, Clojure is a Lisp, so everything I just told about Common Lisp is true for Clojure too. Moreover, Clojure is a functional language, so everything I said about that is true for Clojure too.
 
 ### More laziness
 
@@ -527,7 +529,7 @@ Of course, under the hood they're being calculated when we access them. Let's ta
   (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
 ```
       
-One more time, don't worry if you don't get the details. It uses an anonymous function to calculate each pair of numbers of the fibonacci sequence, and then maps to the first of each pair, which composes the actual fibonacci sequence.
+One more time, don't worry if you don't get the details. It uses an anonymous function to calculate each pair of numbers of the Fibonacci sequence, and then maps to the first of each pair, which composes the actual Fibonacci sequence.
 
 All sequence operations like map or first are lazy, so this definition doesn't calculate anything, but, still, allows us to access the sequence as if it was already calculated:
 
@@ -536,7 +538,7 @@ All sequence operations like map or first are lazy, so this definition doesn't c
 ; (0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181)
 ```
     
-This fibonacci sequence may not be what you call a solution for a problem, but you'd like to know that file reading and XML parsing (among many other things) is performed this way.
+This Fibonacci sequence may not be what you call a solution for a problem, but you'd like to know that file reading and XML parsing (among many other things) are performed this way.
 
 ### STM
 
@@ -607,8 +609,11 @@ You can download Ujfalusi here: [http://github.com/porras/ujfalusi](http://githu
 It's true that you can't get much done with the Ujfalusi language, but, do you know what? I implemented it in very little time, and was a lot of fun.
 
 Realizing that you can just type some lines of code and have a new language created is awesome.
+
 Realizing that every single language, even the most used ones, was born the same way, is even more awesome.
-And, as Jose Valim pointed in his Euruko talk, which I encorage you to watch if you can find the video, you can learn a lot about your current favorite languages while creating a new one, like he did with Elixir.
+
+And, as José Valim pointed in his EuRuKo talk, which I encorage you to watch if you can find the video, you can learn a lot about your current favorite languages while creating a new one, like he did with [Elixir](http://elixir-lang.org/).
+
 But over all this, it's the whole lot of fun involved in creating a language.
 
 If you wish to play with this, there are two things you need to read. First, this wonderful ebook:
@@ -627,13 +632,13 @@ And second, the source code of any of the number of [languages implemented over 
 
 The winner is **ME**. And I won for at least four reasons.
 
-**FIRST.** Working in this talk and article, learning about all these wonderful languages was an incredibly lot of fun. Do you want more reasons?
+**FIRST.** Working in this talk and article, learning about all these wonderful languages was an incredible lot of fun. Do you want more reasons?
 
 **SECOND.** As I said before, I think learning new and different languages makes you a better programmer even if you don't end using them. You get new abstractions, new ideas, new styles, and a wider view about the craft of programming.
 
 **THIRD.** That *“even if you don't use it”* is boring, I might have heard that a million times. That might have been good for 1995. But in the *“cloud”* era, you can use whatever you think that may help you to bring useful features to your users better and sooner. And if you can, you must. That's why you started using Ruby. Don't ever forget it.
 
-**FOURTH.** Polyglotism is here. There are several strategies to use different languages into the same application, like using a single platform like JVM, or communicating with messages through something like AMQP or ZeroMQ. You can push the *“the right tool for each job”* to a whole new level. So Rails may still be the best way to do web development, but web applications do much more than serving pages, and some of this other things might be better acomplished using Erlang, Haskell, Common Lisp, Clojure or whatever else you might find.
+**FOURTH.** Polyglotism is here. There are several strategies to use different languages into the same application, like using a single platform like JVM, or communicating with messages through something like AMQP or ZeroMQ. You can push the *“the right tool for each job”* to a whole new level. So Rails may still be the best way to do web development, but web applications do much more than serving pages, and some of this other things might be better acomplished using Erlang, Haskell, Common Lisp, Clojure, or whatever else you might find.
 
 So, all I can say is: go out and play, break something if you must, and don't ever forget to have fun.
 
