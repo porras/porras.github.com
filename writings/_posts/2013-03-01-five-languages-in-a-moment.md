@@ -650,3 +650,8 @@ Thanks for reading this long!
 * [Practical Common Lisp](http://www.gigamonkeys.com/book/), by [Peter Siebel](http://www.gigamonkeys.com/)
 * [Programming Clojure](http://pragprog.com/book/shcloj/programming-clojure), by [Stuart Halloway](http://thinkrelevance.com/team/members/stuart-halloway)
 * [How To Create Your Own Freaking Awesome Programming Language](http://createyourproglang.com/), by [Marc-André Cournoyer](http://macournoyer.com/)
+
+### Acknowledgements
+
+* [Mari](http://twitter.com/valakirka) helped me turn a 3 hours torture into a 1 hour talk; then, as part of the organizing team, helped me cheat and make it into a 45 minutes slot ;)
+* [Ale](http://bomberstudios.com/) made some corrections to this text
