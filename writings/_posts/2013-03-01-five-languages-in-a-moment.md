@@ -659,4 +659,4 @@ Thanks for reading this long!
 ### Acknowledgements
 
 * [Mari](http://twitter.com/valakirka) helped me turn a 3 hours torture into a 1 hour talk; then, as part of the organizing team, helped me cheat and make it into a 45 minutes slot ;)
-* [Ale](http://bomberstudios.com/) made some corrections to this text
+* [Ale](http://bomberstudios.com/) and [Xavi](http://hashref.com/) made a lot of corrections to this text
