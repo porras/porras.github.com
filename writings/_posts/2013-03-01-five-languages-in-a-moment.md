@@ -5,9 +5,9 @@ title: Five Languages in a Moment
 description: A short introduction to Five different programming languages (Erlang, Haskell, Common Lisp, Clojure, and a special surprise) intended for Rubyists
 ---
 
-*This article was built from the notes I used in my talk [Five Languages in a Moment](/talks/2011/five-languages-in-a-moment/) in [Conferencia Rails 2011](http://conferenciarails.org/). Not exactly a transcript of the talk but a different format for it. I invested a lot of work on that talk and found a bit sad that, once given, that work would be lost. That's why I wrote this.*
+*This article was built from the notes I used in my talk [Five Languages in a Moment](/talks/2011/five-languages-in-a-moment/) in [Conferencia Rails 2011](http://conferenciarails.org/). Not exactly a transcript of the talk but a different format for it. I put a lot of work on that talk and found a bit sad that, once delivered, that work would be lost. That's why I wrote this.*
 
-*It's an ultrafast excursion through five different languages, why are they different, and why are they remarkable. At many points, it's clearly addressing Ruby programmers (after all, it was a Ruby conference), but you might find it interesting, useful, or just fun, even if you're not one.*
+*It's an ultrafast excursion through five different languages, why they're different, and why they're remarkable. At many points, it's clearly addressing Ruby programmers (after all, it was a Ruby conference), but you might find it interesting, useful, or just fun even if you're not one.*
 
 ## An introduction
 
@@ -21,7 +21,7 @@ In 2005, I read this book:
 
 Its main topic, outsourcing, is kind of depressing, but it contains a lot of useful advices for your career as a software developer. One of its advices is *“learn a new language each year”*, which sounded very good to me. After all, learning is a very basic skill for our craft, and every skill can and must be trained.
 
-So, in 2006, I learnt Ruby. Well, I mean I started to learn Ruby. You all know what happened then, because something very similar might have happened to you. Ruby changed my job, my way of thinking about the craft or programming, and my whole world. In 2007, I didn't learn any new language. Neither in 2008. Nor 2009, or 2010. Ruby is so awesome that made me forget my promise for five whole years!
+So, in 2006, I learnt Ruby. Well, I mean I started to learn Ruby. You all know what happened then, because something very similar might have happened to you. Ruby changed my job, my way of thinking about the craft of programming, and my whole world. In 2007, I didn't learn any new language. Neither in 2008. Nor 2009, or 2010. Ruby is so awesome that it made me forget my promise for five whole years!
 
 ![Ruby is awesome](/images/five/ruby-awesome.png)
 
