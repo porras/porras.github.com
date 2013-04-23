@@ -33,11 +33,11 @@ That's one of the most inspiring books I've ever read. Seriously, read it if you
 
 The idea is simple: there's a power continuum between the lowest level, least powerful in abstractions language and the highest level, most powerful in abstractions one. So, why don't all programmers choose the same language, the most powerful one? It's not so simple: as programmers, we are not able to fully know that power continuum, which remains kind of *‘platonic’* for a simple reason: we're in it. So, when we look down the stairs, all is clear for us. We see a lot of languages which are clearly less powerful than ours. We can even wonder how can that poor people get anything done in a language without, for example, blocks. Or classes.
 
-But when we look up the stairs, things are not so easy because we may even not realize we're looking up. When we look at a language more powerful than ours, we don't see that. We just see a strange language with strange features. A language just as powerful as ours, but with some weird stuff mixed in. We simply lack the mental abstractions to understand those features. If as programmers we ‘think in Ruby’, we'll never be able to understand some powerful features present in other languages, just like a Java programmer doesn't at first understand the power of Ruby blocks. That's why having a look at those languages that seem strange to us at first is interesting: because we might find that that languages are not strange, but more powerful.
+But when we look up the stairs, things are not so easy because we may even not realize we're looking up. When we look at a language more powerful than ours, we don't see that. We just see a strange language with strange features. A language just as powerful as ours, but with some weird stuff mixed in. We simply lack the mental abstractions to understand those features. If as programmers we ‘think in Ruby’, we'll never be able to understand some powerful features present in other languages, just like a Java programmer doesn't at first understand the power of Ruby blocks. That's why having a look at those languages that seem strange to us at first is interesting: because we might find that those languages are not strange, but more powerful.
 
-Anyway, for me, feeding new abstractions for my mind to think in sounds like a very legitimate reason to learn new languages. Even if I plan to stick with Ruby (which I do). So, as I told before, I decided to catch up with my promise.
+Anyway, for me, feeding new abstractions for my mind to think about sounds like a very legitimate reason to learn new languages. Even if I plan to stick with Ruby (which I do). So, as I told before, I decided to catch up with my promise.
 
-By the time, I had just moved to live with my girlfriend. And with her, also came her huge comics collection, almost as cool as her. Next stop was a well known Swedish furniture shop, to get the biggest shelve we could find, which is taller than me, and far wider. After mounting it, the miracle: an empty slot. I had to fix that! Next stop, a well known online book store. There, I found this book:
+By the time, I had just moved in with my girlfriend. And with her, also came her huge comics collection, almost as cool as her. Next stop was a well known Swedish furniture shop, to get the biggest shelf we could find, which is taller than me, and far wider. After mounting it, the miracle: an empty slot. I had to fix that! Next stop, a well known online book store. There, I found this book:
 
 [![7 Languages in 7 Weeks](/images/five/seven-languages.jpg)](http://pragprog.com/book/btlang/seven-languages-in-seven-weeks)
 
@@ -69,7 +69,7 @@ So what is functional programming? If you don't know functional programming, I r
 
 This fact yields obvious limitations, and for sure requires a change in your programming mindset and techniques. Because, *how can you get anything done without changing state?* But it also has advantages. No side effects means less bugs. And less coupling between different parts of your program. And very easy testing. And much easier parallelization.
 
-So, variables don't vary. Doesn't seem it nonsense? I'll tell you what is nonsense:
+So, variables don't vary. Doesn't it seem nonsense? I'll tell you what is nonsense:
 
 ```ruby
 x = x + 1
@@ -94,7 +94,7 @@ But soon we will find a difference:
 
 For sure. X can't be both 1 and 2!
 
-What pattern matching means is that we are asserting that both sides of the equals are actually equal, and the compiler will do whatever is possible to make my assertion true.
+What pattern matching means is that we are asserting that both sides of the equal sign are actually equal, and the compiler will do whatever is possible to make my assertion true.
 
 In this other case I'm going to assert that the variable `Point` equals a data structure composed of the symbol `point` and the integers `15` and `20`. Then I assert that the structure `{point, X, Y} = Point`. `point` equals `point`? Yes! `X` is `15`? If sou say so... `Y` is `20`? Ok!
 
@@ -124,7 +124,7 @@ Ok, long enough without talking about functions. Here they are:
 double(X) -> X * 2.
 ```
 
-Simple enough. Remember pattern matching? We can use it for defining function with several *clauses*:
+Simple enough. Remember pattern matching? We can use it for defining a function with several *clauses*:
 
 ```erlang
 fact(0) -> 1;
@@ -195,9 +195,9 @@ There's much to functional programming, and I encourage you not to dismiss it ju
 
 So, concurrency is a very interesting topic, now that Moore's law seems to have stopped and that what we're getting instead is more cores. Erlang approach is unique, and largely based on what I just said: no global state. Almost all bugs in concurrent programs are related to the sharing of some global state, a whole family of bugs which are simply not possible in Erlang.
 
-The concurrency unit is the **process** (not in the operating system meaning of the term). Since processes share no memory or state, are easy to synchronize without using locks, and without incurring in race conditions or other subtle bugs related to thread based programming. But, if processes don't share any memory or state, how do they interact? Through message passing.
+The concurrency unit is the **process** (not in the operating system meaning of the term). Since processes share no memory or state, they are easy to synchronize without using locks, and without incurring in race conditions or other subtle bugs related to thread based programming. But, if processes don't share any memory or state, how do they interact? Through message passing.
 
-To create a new process, we use the function `spawn`, which takes a function as parameter (which can be anonymous or named) that is simply the operation to perform by that process, and which returns a process identifier that we'll need to pass messages:
+To create a new process, we use the function `spawn`, which takes a function as parameter (which can be anonymous or named) that is simply the operation to be performed by that process, and which returns a process identifier that we'll need in order to pass messages:
 
 ```erlang
 Pid = spawn(Fun).
@@ -220,7 +220,7 @@ receive
 end
 ```
 
-When we issue a `receive` statement, our process checks its *inbox* for any previously arrived message and process it, and if it's empty waits for one to arrive, and process it.
+When we issue a `receive` statement, our process checks its *inbox* for any previously arrived message and process it, and if it's empty it waits for one to arrive, and process it.
 
 One can write *ad hoc* parallel programs, in which we parallelize certain calculations, but when things get really interesting is when we go generic. Let's see an example. This example may be a little complicated to explain in a minute, but I thought I had to try because it's just beautiful. Don't worry if you don't get the details, try to get the *“essence”*.
 
@@ -250,7 +250,7 @@ all computations, but are still able to collect them in order.
 
 I know this example is complicated, but I found it really interesting because using generic functions is the easiest way to write parallel programs: we separate the parallelization logic from the program logic and we can get performance boosts of even xN (being N the number of avaiable cores) writing our programs like we always did, without thinking about parallelization, as long as our functions are side effects free, which in Erlang is true by definition. In a time when 2 cores are everywhere, 4 and 8 cores are fairly common, and trends seem to suggest we'll get hundreds of cores anytime soon, that's almost a superpower.
 
-On top of that, how many times have someone told you, and you have struggled to understand, that in good OOP, *it's all about message passing*? Well, play a bit with Erlang processes and messages and I'm sure you'll struggle no more!
+On top of that, how many times has someone told you, and you have struggled to understand, that in good OOP, *it's all about message passing*? Well, play a bit with Erlang processes and messages and I'm sure you'll struggle no more!
 
 ### Distribution oriented
 
@@ -280,9 +280,9 @@ Some facts about Haskell
 * Lazy evaluation
 * Strict but powerful type system
 
-So, first of all is that Haskell is also a functional language so much of the things I just told about Erlang are true about Haskell too.
+So, first of all, Haskell is also a functional language so much of the things I just told about Erlang are true about Haskell too.
 
-But Haskell is a more *academically* functional language. Haskell lovers like to say Haskell is a niche language, and that its niche is solving hard problems. In order to do that it adds a pair of things over what I just told you about functional programming in Erlang that I'd like to show you.
+But Haskell is a more *academical* functional language. Haskell lovers like to say Haskell is a niche language, and that its niche is solving hard problems. In order to do that it adds a pair of things over what I just told you about functional programming in Erlang that I'd like to show you.
 
 ### Type system
 
@@ -318,7 +318,7 @@ data Color = Red
            | Yellow
            | Green
            | RGB Int Int Int
-           
+
 yellow = Yellow
 black = RGB 0 0 0
 ```
@@ -455,7 +455,7 @@ So, Lisp rules are as simple as this:
 
 The coolest feature of Lisp, the one I want to show you the most, is macros.
 
-Macros generate at compile time the code than will actually get run. A.k.a. metaprogramming. Metaprogramming is a well known technique in many languages. We as Rubyists like it, since it's the reason for example that Rails is so cool. But let me tell you something: no language allows you to go further in metaprogramming as Lisp. And I'll tell you why, because it's simple to understand, and, as you may have expected, it's fully related to the parentheses.
+Macros generate at compile time the code than will actually get run. A.k.a. metaprogramming. Metaprogramming is a well known technique in many languages. We as Rubyists like it, since it's the reason for example why Rails is so cool. But let me tell you something: no language allows you to go further in metaprogramming as Lisp. And I'll tell you why, because it's simple to understand, and, as you may have expected, it's fully related to the parentheses.
 
 Metaprogramming is generating and manipulating code. Code in almost all languages is just a stream of characters, so to manipulate it, we have the string manipulation tools, which may be useful but are obviously limited. If you read the Rails code, most of the examples use `eval` or `class_eval` with a string built using interpolations and maybe some iteration. And sometimes that feels nasty.
 
@@ -475,7 +475,7 @@ A trivial and stupid example but that I think that can give you an idea about wh
 
 Please note that the code used inside the backwards macro is not even valid Lisp code (remember valid Lisp code is composed by lists whose first element is a function name, which is not the case in `("wadus" print)`). We're creating a new language.
 
-Of course, there's much more you can get done with macros and, actually, it's said that most of the code in big Lisp programs is actually macros, which is not only the dream of a hardcore metaprogrammer, but also of a lazy developer. What you're actually doing is writing a program which writes the program you need.
+Of course, there's much more you can do with macros and, actually, it's said that most of the code in big Lisp programs is actually macros, which is not only the dream of a hardcore metaprogrammer, but also of a lazy developer. What you're actually doing is writing a program which writes the program you need.
 
 ### You should try Common Lisp if...
 
@@ -528,7 +528,7 @@ Of course, under the hood they're being calculated when we access them. Let's ta
 (defn fibonacci []
   (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
 ```
-      
+
 One more time, don't worry if you don't get the details. It uses an anonymous function to calculate each pair of numbers of the Fibonacci sequence, and then maps to the first of each pair, which composes the actual Fibonacci sequence.
 
 All sequence operations like map or first are lazy, so this definition doesn't calculate anything, but, still, allows us to access the sequence as if it was already calculated:
@@ -537,7 +537,7 @@ All sequence operations like map or first are lazy, so this definition doesn't c
 (take 20 (fibonacci))
 ; (0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181)
 ```
-    
+
 This Fibonacci sequence may not be what you call a solution for a problem, but you'd like to know that file reading and XML parsing (among many other things) are performed this way.
 
 ### STM
@@ -558,7 +558,7 @@ So, how do you implement a memory transaction?
 (def fulano-balance (ref 100))
 (def mengano-balance (ref 80))
 
-(dosync 
+(dosync
   (ref-set fulano-balance (+ @fulano-balance 20))
   (ref-set mengano-balance (- @mengano-balance 20)))
 
@@ -606,7 +606,7 @@ You can download Ujfalusi here: [http://github.com/porras/ujfalusi](http://githu
 
 ![Ujfalusi running](/images/five/ujfalusi_run.png)
 
-It's true that you can't get much done with the Ujfalusi language, but, do you know what? I implemented it in very little time, and was a lot of fun.
+It's true that you can't get much done with the Ujfalusi language, but you know what? I implemented it in very little time, and it was a lot of fun.
 
 Realizing that you can just type some lines of code and have a new language created is awesome.
 
@@ -634,7 +634,7 @@ The winner is **ME**. And I won for at least four reasons.
 
 **FIRST.** Working in this talk and article, learning about all these wonderful languages was an incredible lot of fun. Do you want more reasons?
 
-**SECOND.** As I said before, I think learning new and different languages makes you a better programmer even if you don't end using them. You get new abstractions, new ideas, new styles, and a wider view about the craft of programming.
+**SECOND.** As I said before, I think learning new and different languages makes you a better programmer even if you don't end up using them. You get new abstractions, new ideas, new styles, and a wider view about the craft of programming.
 
 **THIRD.** That *“even if you don't use it”* is boring, I might have heard that a million times. That might have been good for 1995. But in the *“cloud”* era, you can use whatever you think that may help you to bring useful features to your users better and sooner. And if you can, you must. That's why you started using Ruby. Don't ever forget it.
 
