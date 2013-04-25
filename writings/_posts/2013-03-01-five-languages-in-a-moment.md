@@ -35,7 +35,7 @@ The idea is simple: there's a power continuum between the lowest level, least po
 
 But when we look up the stairs, things are not so easy because we may even not realize we're looking up. When we look at a language more powerful than ours, we don't see that. We just see a strange language with strange features. A language just as powerful as ours, but with some weird stuff mixed in. We simply lack the mental abstractions to understand those features. If as programmers we ‘think in Ruby’, we'll never be able to understand some powerful features present in other languages, just like a Java programmer doesn't at first understand the power of Ruby blocks. That's why having a look at those languages that seem strange to us at first is interesting: because we might find that those languages are not strange, but more powerful.
 
-Anyway, for me, feeding new abstractions for my mind to think about sounds like a very legitimate reason to learn new languages. Even if I plan to stick with Ruby (which I do). So, as I told before, I decided to catch up with my promise.
+Anyway, for me, feeding new abstractions for my mind to think in sounds like a very legitimate reason to learn new languages. Even if I plan to stick with Ruby (which I do). So, as I told before, I decided to catch up with my promise.
 
 By the time, I had just moved in with my girlfriend. And with her, also came her huge comics collection, almost as cool as her. Next stop was a well known Swedish furniture shop, to get the biggest shelf we could find, which is taller than me, and far wider. After mounting it, the miracle: an empty slot. I had to fix that! Next stop, a well known online book store. There, I found this book:
 
@@ -659,4 +659,4 @@ Thanks for reading this long!
 ### Acknowledgements
 
 * [Mari](http://twitter.com/valakirka) helped me turn a 3 hours torture into a 1 hour talk; then, as part of the organizing team, helped me cheat and make it into a 45 minutes slot ;)
-* [Ale](http://bomberstudios.com/) and [Xavi](http://hashref.com/) made a lot of corrections to this text
+* [Ale](http://bomberstudios.com/), [Xavi](http://hashref.com/) and [Caio](https://github.com/caiofilipini) made a lot of corrections to this text
