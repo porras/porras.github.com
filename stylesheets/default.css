@@ -6,6 +6,10 @@ body {
   background-color: #ddd;
 }
 
+body.home {
+  font-size: 130%;
+}
+
 a,a:visited {
   color: #d00;
   text-decoration: none;

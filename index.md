@@ -1,6 +1,7 @@
 ---
 layout: default
 title: iamserg.io
+category: home
 ---
 
 # [Sergio Gil](/)
