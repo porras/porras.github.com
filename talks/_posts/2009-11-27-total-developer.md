@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Total Developer
 event: Conferencia Rails 2010
 event_url: http://conferenciarails.org/

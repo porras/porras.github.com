@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Acceptance Testing with RSpec, Capybara & friends
 event: madrid-rb February 2010
 event_url: https://madridrb.jottit.com/

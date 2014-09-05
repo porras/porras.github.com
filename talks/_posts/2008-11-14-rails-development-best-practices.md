@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Rails Development Best Practices
 event: Conferencia Rails 2008
 event_url: http://conferenciarails.org

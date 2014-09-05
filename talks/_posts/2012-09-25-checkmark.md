@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: ✓
 event: Baruco 2012 Lightning Talks
 event_url: http://www.baruco.org/

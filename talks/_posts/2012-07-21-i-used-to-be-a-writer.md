@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: I used to be a writer
 event: lightning.io
 event_url: http://lightning.io/

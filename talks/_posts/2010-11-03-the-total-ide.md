@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: The Total IDE
 event: RejectConf Conferencia Rails 2010
 event_url: https://rejectconf.jottit.com/

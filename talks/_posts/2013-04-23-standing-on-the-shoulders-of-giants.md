@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Standing on the Shoulders of Giants
 event: Railsberry 2013 Lightning Talks
 event_url: http://www.railsberry.com/

@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: A [git] workflow
 event: madrid-rb January 2011
 event_url: https://madridrb.jottit.com/

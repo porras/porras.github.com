@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Distributed Version Control with GIT
 event: GUL-UC3M
 event_url: http://gul.es/

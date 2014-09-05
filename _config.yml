@@ -1,5 +1,5 @@
 safe: true
 exclude: [Gemfile, Gemfile.lock, admin]
 permalink: /:categories/:year/:title/
-pygments: true
+hightlighter: pygments
 markdown: redcarpet

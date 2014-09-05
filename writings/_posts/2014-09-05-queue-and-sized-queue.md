@@ -1,6 +1,5 @@
 ---
 layout: writing
-category: writing
 title: "Queue and SizedQueue: hidden gems in the Ruby standard library"
 description: "Queue and SizedQueue: hidden gems in the Ruby standard library"
 ---

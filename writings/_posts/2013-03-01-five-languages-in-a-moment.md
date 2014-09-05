@@ -1,6 +1,5 @@
 ---
 layout: writing
-category: writing
 title: Five Languages in a Moment
 description: A short introduction to Five different programming languages (Erlang, Haskell, Common Lisp, Clojure, and a special surprise) intended for Rubyists
 ---

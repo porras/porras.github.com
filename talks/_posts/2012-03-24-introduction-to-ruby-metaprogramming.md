@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Introduction to Ruby Metaprogramming
 event: Codemotion Spain 2012
 event_url: http://codemotion.es/
@@ -11,11 +10,11 @@ event_url: http://codemotion.es/
 This was the original description in the event webpage:
 
 > “Código que escribe código”. ¡Guau! Suena a magia, o a ciencia ficción. Y sin embargo es algo que los rubystas usamos cada día. Porque, aparte de una técnica muy poderosa, la metaprogramación es una de las características más distintivas de Ruby. Usando metaprogramación, podrás:
-> 
+>
 > * Eliminar la duplicación en tu código hasta niveles que en otros lenguajes no puedes ni soñar. DRY (Don't Repeat Yourself) elevado a la máxima potencia.
 > * Crear DSLs (Domain Specific Languages) que te permitan programar de manera concisa y expresiva.
 > * Obtener el máximo provecho de la flexibilidad de Ruby, haciéndolo adaptarse a tus necesidades en vez de al contrario.
-> 
+>
 > ¡Y todo de la manera sencilla y divertida a la que Ruby nos tiene acostumbrados!
 
 <script async class="speakerdeck-embed" data-id="4f6eefbe2cf549002201c923" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

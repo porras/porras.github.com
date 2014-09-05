@@ -1,6 +1,5 @@
 ---
 layout: talk
-category: talk
 title: Ruby Metaprogramming
 event: Conferencia Rails 2007
 event_url: http://conferenciarails.org/
