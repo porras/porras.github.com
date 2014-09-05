@@ -2,7 +2,6 @@ body {
   font-family: sans-serif;
   margin: 20px auto;
   width: 900px;
-  font-size: 150%;
   line-height: 1.25em;
   background-color: #ddd;
 }
@@ -17,11 +16,15 @@ a:hover {
 }
 
 h1 {
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 h2 {
   font-weight: normal;
+}
+
+h2.author, h2.event {
+  font-size: 110%;
 }
 
 .side {
