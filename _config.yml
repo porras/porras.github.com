@@ -3,3 +3,7 @@ exclude: [Gemfile, Gemfile.lock, admin]
 permalink: /:categories/:year/:title/
 hightlighter: pygments
 markdown: redcarpet
+
+name: "Sergio Gil · iamserg.io"
+description: "Sergio Gil · iamserg.io"
+url: http://iamserg.io

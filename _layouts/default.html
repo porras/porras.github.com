@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/code.css">
+    <link href='/feed.xml' rel='alternate' type='application/atom+xml'>
     <meta charset="UTF-8">
     <title>Sergio Gil · {{ page.title | escape }}</title>
     {% if page.description %}
@@ -10,12 +11,12 @@
     {% endif %}
     <link rel="icon" href="/favicon.ico">
   </head>
-    
+
   <body>
     {% include side.html %}
-    
+
     {{ content }}
-    
+
     <div class="footer">Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> · © 2006 - 2013</div>
     <script type="text/javascript">
 
